@@ -94,6 +94,7 @@ const Navbar = () => {
               <Moon className="w-5 h-5 text-blue-600" />
             )}
           </motion.button>
+          
           <select
             value={i18n.language}
             onChange={changeLanguage}
@@ -105,11 +106,12 @@ const Navbar = () => {
     }
   `}
           >
-            <option value="en">EN</option>
-            <option value="hi">HI</option>
-            <option value="es">ES</option>
-            <option value="fr">FR</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="hi">🇮🇳 Hindi</option>
+            <option value="es">🇪🇸 Spanish</option>
+            <option value="fr">🇫🇷 French</option>
           </select>
+
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -145,8 +147,8 @@ const Navbar = () => {
           }`}
         >
           <div className="px-6 py-4 flex flex-col gap-3">
-            {navItem("/",t("nav.home"), true)}
-            {navItem("/profile",t("nav.profile"), true)}
+            {navItem("/", t("nav.home"), true)}
+            {navItem("/profile", t("nav.profile"), true)}
           </div>
         </div>
       )}
