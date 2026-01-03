@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon, Menu, X } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useThemeTranslation } from '../hooks/useThemeTranslation';
 import { useTheme } from "../contexts/ThemeContext";
 import { useState } from "react";
 import nutrivigile from "../assets/nutrivigile.jpeg";
@@ -10,7 +10,7 @@ const Navbar = () => {
   const { pathname } = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { i18n, t } = useTranslation();
+  const { t, i18n } = useThemeTranslation();
 
   const changeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
@@ -64,8 +64,8 @@ const Navbar = () => {
               }`}
             >
               {" "}
-              <img className="w-8 h-8" src={nutrivigile} alt="image"></img>{" "}
-              NutriVigil
+              <img className="w-8 h-8" src={nutrivigile} alt="logo"></img>{" "}
+              {t('appName')}
             </div>
           </Link>
         </motion.div>
