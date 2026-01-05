@@ -63,9 +63,9 @@ const Navbar = () => {
         </motion.div>
 
         {/* Right Side */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
           {/* Desktop Nav */}
-          <div className="hidden md:flex gap-6">
+          <div className="hidden md:flex gap-4 lg:gap-6">
             {navItem("/", t("nav.home"))}
             {navItem("/profile", t("nav.profile"))}
           </div>
@@ -90,7 +90,9 @@ const Navbar = () => {
           </motion.button>
 
           {/* Language Picker */}
-          <LanguagePicker />
+          <div className="ml-1 sm:ml-2">
+            <LanguagePicker />
+          </div>
 
           {/* Mobile Menu Button */}
           <button
