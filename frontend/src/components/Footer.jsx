@@ -33,21 +33,21 @@ const Footer = () => {
   // Footer navigation data with proper links and icons
   const footerLinks = {
     product: [
-      { name: 'AI Scanner', href: '/scanner', icon: Scan },
-      { name: 'Nutrition Decoded', href: '/nutrition', icon: Heart },
-      { name: 'Safety Signals', href: '/safety', icon: Shield },
-      { name: 'Health Profile', href: '/profile', icon: User },
+      { name: 'AI Scanner', href: '#' },
+      { name: 'Nutrition Decoded', href: '#' },
+      { name: 'Safety Signals', href: '#' },
+      { name: 'Health Profile', href: '#' },
     ],
     company: [
-      { name: 'About Us', href: '/about', icon: Info },
-      { name: 'Our Mission', href: '/mission', icon: Target },
-      { name: 'Careers', href: '/careers', icon: Briefcase },
-      { name: 'Contact', href: '/contact', icon: MessageCircle },
+      { name: 'About Us', href: '#' },
+      { name: 'Our Mission', href: '#' },
+      { name: 'Careers', href: '#' },
+      { name: 'Contact', href: '#' },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy', icon: ShieldCheck },
-      { name: 'Terms of Service', href: '/terms', icon: Scale },
-      { name: 'Cookie Policy', href: '/cookies', icon: Cookie },
+      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms of Service', href: '#' },
+      { name: 'Cookie Policy', href: '#' },
     ]
   };
 
