@@ -33,21 +33,21 @@ const Footer = () => {
   // Footer navigation data with proper links and icons
   const footerLinks = {
     product: [
-      { name: 'AI Scanner', href: '/scanner', icon: Scan },
-      { name: 'Nutrition Decoded', href: '/nutrition', icon: Heart },
-      { name: 'Safety Signals', href: '/safety', icon: Shield },
-      { name: 'Health Profile', href: '/profile', icon: User },
+      { name: 'AI Scanner', icon: Scan , href: '#'},
+      { name: 'Nutrition Decoded', icon: Heart , href: '#'},
+      { name: 'Safety Signals', icon: Shield , href: '#'},
+      { name: 'Health Profile', icon: User , href: '#'},
     ],
     company: [
-      { name: 'About Us', href: '/about', icon: Info },
-      { name: 'Our Mission', href: '/mission', icon: Target },
-      { name: 'Careers', href: '/careers', icon: Briefcase },
-      { name: 'Contact', href: '/contact', icon: MessageCircle },
+      { name: 'About Us', icon: Info , href: '#'},
+      { name: 'Our Mission', icon: Target , href: '#'},
+      { name: 'Careers', icon: Briefcase , href: '#'},
+      { name: 'Contact', icon: MessageCircle , href: '#'},
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy', icon: ShieldCheck },
-      { name: 'Terms of Service', href: '/terms', icon: Scale },
-      { name: 'Cookie Policy', href: '/cookies', icon: Cookie },
+      { name: 'Privacy Policy', icon: ShieldCheck , href: '#'},
+      { name: 'Terms of Service', icon: Scale , href: '#'},
+      { name: 'Cookie Policy', icon: Cookie , href: '#'},
     ]
   };
 
